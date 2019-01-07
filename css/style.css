@@ -1,0 +1,293 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 1px;
+    border: 1px solid red;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+}
+
+header.header{
+    background: url(../images/backgroud.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+nav {
+    background: #000000;
+    color: #fff;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.navigation {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.logo {
+    float: left;
+    height: auto;
+    margin-right: 3rem;
+    margin-top: 1.7em;
+    width: 120px;
+}
+
+ul.menu {
+    float: left;
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 2em;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a.active {
+    color: rgb(29, 198, 139);
+}
+
+div.icons {
+    display: inline;
+    float: right;
+    margin-top: 1.1rem;
+}
+
+
+div.icons img {
+    height: auto;
+    width: 20px;
+}
+
+.notification, .message, .user {
+    font-size: 1.7em;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.user {
+    margin-right: 0;
+}
+
+.user i{
+    background: rgb(140, 140, 140);
+    border-radius: 50%;
+    height: 45px;
+    padding: 0.4em 0.1em 0 0.1em;
+    text-align: center;
+    width: 45px;
+}
+
+div.search {
+    margin: 10rem auto 3rem auto;
+    width: 85%;
+}
+
+.search-text {
+    color: #fff;
+    text-align: center;
+}
+
+.search-text h1{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.search-text h5{
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+.search-form input[type="text"]{
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-size: 1.2em;
+    height: 4rem;
+    outline: none;
+    padding: 10px 20px;
+    width: 25%;
+}
+
+.search-form input[type="text"].miles {
+    width: 13%;
+}
+
+.search-form button {
+    background: rgb(29, 198, 139);
+    border: rgb(29, 198, 139);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    height: 4rem;
+    padding: 10px 20px;
+    width: 10%;
+}
+
+.user-card {
+    background: #fff;
+    box-shadow: 2px 2px 10px 2px rgb(179, 178, 178);
+    display: inline-block;
+    height: 280px;
+    margin-right: 5px;
+    text-align: center;
+    width: 24%;
+}
+
+.user-card:last-child {
+    margin-right: 0;
+}
+
+div.user-image { 
+    border-radius: 50%;
+    height: 90px;
+    overflow: hidden;
+    right: -32%;
+    position: relative;
+    width: 90px;
+}
+
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+
+
+.location {
+    display: inline-block;
+}
+
+
+.niche {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.niche li {
+    border-right: 1px solid #777;
+    color: #777;
+    display: inline;
+    padding: 0 0.8em;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 2px;
+    font-size: 1em;
+    outline: none;
+    padding: 0.5em 0.6em;
+}
+
+.btn-small {
+
+}
+
+.niche li:last-child {
+    border-right: none;
+    
+}
+
+
+footer {
+    background: #111222;
+    color: #fff;
+}
+
+.footer {
+    overflow: hidden;
+}
+
+.footer-links li {
+    border-left: 1px solid rgb(216, 211, 211);
+    display: inline;
+
+}
+
+.footer-links li:first-child {
+    border-left: none;
+    margin-left: 0;
+
+}
+
+.footer li a{
+    font-size: 0.9em;
+    color: rgb(216, 211, 211);
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+
+
