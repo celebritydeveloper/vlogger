@@ -15,7 +15,7 @@ https://iamessien.github.io/vlogger/
 
 ### Tools
 In the cause of building this app a time tracking tool was used to track the timing of the project.
-https://toggl.com/app/projects/3140214/edit/148472225
+https://toggl.com/app/projects/3140214/edit/148616772
 
 
 ### Installing
