@@ -30,6 +30,8 @@ body {
     font-size: 0.315rem;
 }
 
+/* Header Styling */
+
 header {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/Header-Banner.png) no-repeat;
     background-position: center;
@@ -69,6 +71,14 @@ header {
 
 a.active {
     color: rgb(29, 198, 139);
+}
+
+.menu a:hover:not(.active) {
+    color: #ddd;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
 }
 
 .logo, .menu {
@@ -166,7 +176,7 @@ input.cuisine {
 }
 
 .search-form input[type="text"]:focus {
-    border-color: rgb(29, 198, 139);
+    border-color: rgb(255, 255, 255);
     background: rgb(29, 198, 139);
     caret-color: rgb(255, 255, 255);
     color: #fff;
@@ -179,6 +189,7 @@ input[type="submit"].submit {
     border: none;
     border-radius: 0.188rem;
     color: rgb(255, 255, 255);
+    cursor: pointer;
     font-size: 1em;
     font-weight: bold;
     height: 4.063rem;
@@ -189,6 +200,18 @@ input[type="submit"].submit {
     text-transform: uppercase;
     width: 12%;
 }
+
+input[type="submit"].submit:hover {
+    background: rgb(29, 24, 24);
+    color: rgb(255, 255, 255);
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+
+/* Body Styling */
 
 .advanced-search {
     margin-top: 1.563rem;
@@ -229,12 +252,25 @@ input[type="submit"].submit {
 
 .advanced-button button{
     background: rgb(29, 24, 24);
+    border: 1px solid rgb(29, 24, 24);
     border-radius: 0.25rem;
     color: rgb(255, 255, 255);
+    cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
     padding: 1.125rem 1.125rem;
     text-transform: uppercase;
+
+}
+
+.advanced-button button:hover{
+    background: rgb(29, 198, 139);
+    border: 1px solid rgb(29, 198, 139);
+    color: rgb(255, 255, 255);
+    -webkit-transition: .3s all ease-in;
+    -moz-transition: .3s all ease-in;
+    -o-transition: .3s all ease-in;
+    transition: .3s all ease-in;
 }
 
 .map {
@@ -264,9 +300,20 @@ input[type="submit"].submit {
     text-align: center;
     width: 24.2%;
 }
+ 
+
 
 .user-card:hover {
+    border: 0.125rem solid rgb(29, 198, 139);
     box-shadow: 0.125rem 0.125rem 1.125rem 0.125rem rgb(222, 219, 219);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .user-card:last-child {
@@ -365,6 +412,7 @@ input[type="submit"].submit {
     border: 0.063rem solid rgb(120, 120, 120);
     border-radius: 0.188rem;
     color: rgb(120, 120, 120);
+    cursor: pointer;
     font-size: 0.875rem;
     outline: none;
     margin-right: 0.313rem;
@@ -390,6 +438,21 @@ input[type="submit"].submit {
     padding: 0 0.938rem;
 }
 
+
+.pagination a.active {
+    background-color: rgb(29, 198, 139);
+    color: white;
+  }
+  
+.pagination a:hover:not(.active) {
+      background-color: #ddd;
+}
+
+a.arrow:hover:not(.active) {
+    background-color: transparent;
+}
+
+
 .pagination a:first-child{
     padding-left: 0;
 }
@@ -398,15 +461,7 @@ input[type="submit"].submit {
     padding-right: 0;
 }
 
-.pagination a.active {
-    background-color: rgb(29, 198, 139);
-    color: white;
-  }
-  
- 
- .pagination a:hover:not(.active) {
-      background-color: #ddd;
-}
+
 
 
 
