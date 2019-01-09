@@ -253,6 +253,7 @@
 
 
     input[type="submit"].submit {
+        background: rgb(29, 198, 139);
         color: rgb(50, 49, 49);
         font-size: 1.5em;
         margin-bottom: 0;

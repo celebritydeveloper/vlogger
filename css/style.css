@@ -118,10 +118,7 @@ a.active {
     margin-top: 0;
 }
 
-.map {
-    margin-bottom: 1.875rem;
-    margin-top: 3.125rem;
-}
+
 
 .search-form form {
     margin-top: 3.125rem;
@@ -168,9 +165,10 @@ input.cuisine {
     padding: 1.25rem 0 1.25rem 2.5rem;  
 }
 
-.search-form input[type="text"]:focus-within {
+.search-form input[type="text"]:focus {
     border-color: rgb(29, 198, 139);
     background: rgb(29, 198, 139);
+    caret-color: rgb(255, 255, 255);
     color: #fff;
 }
 
