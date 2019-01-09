@@ -1,0 +1,363 @@
+@media only screen and (min-device-width: 20rem) and (max-device-width: 36.625rem) {
+
+    .container {
+       margin: 0 auto;
+       width: 90%;
+    }
+
+    .search-title{
+        margin-top: 3.75rem;
+        margin-bottom: 0;
+    }
+
+    .search-title h2{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .search-title p{
+        font-size: 1em;
+        font-weight: lighter;
+        margin-top: 0;
+    }
+
+    .search-form form {
+        margin-top: 1rem;
+    }
+
+    div.search-form {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    div.search-form input[type="text"] {
+        background-position: 0.625rem 1.2rem;
+        background-size: 1.5rem;
+        font-size: 1.3em;
+        padding: 1.25rem 0 1.25rem 2.8rem;
+        width: 100%
+    }
+
+
+    .advanced-search {
+        margin-top: 0.313rem;
+    }
+
+    .advance-title {
+        float: none;
+    }
+
+    .advance-title h3 {
+        font-family: "Hind-Light";
+        font-size: 1.40rem;
+        font-weight: 550;
+        margin-bottom: 0.188rem;
+    }
+
+    .advance-title p {
+        color: rgb(157, 157, 157);
+        display: inline;
+        font-size: 0.938rem;
+        padding: 0;
+        position: relative;   
+    }
+
+    div.advance-title p span {
+        position: absolute;
+        padding-right: 10px;
+        bottom: 2rem;
+    }
+
+
+    div.advanced-button {
+        float: none;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    div.user-card {
+        display: block;
+        margin-bottom: 1.25rem;
+        padding: 1.25rem 0.625rem 0.938rem 0.625rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .user-card:hover {
+        border: 0.125rem solid rgb(29, 198, 139);
+    }
+
+    div.card-image span {
+        height: 0.85rem;
+        position: absolute;
+        margin-left: 1.3rem;
+        margin-top: -1.125rem;
+        width: 0.85rem;
+    }
+
+    div.card-btn {
+        margin-right: 1rem;
+    }
+
+    div.pagination {
+        margin: 3.75rem 0;
+        text-align: center;
+    }
+
+    .copyright {
+        float: none;
+        text-align: center;
+    }
+
+    .footer-links {
+        font-size: 0.625rem;
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .footer-links a{
+        display: inline;
+        padding: 0 0.313rem;
+    }
+
+    .footer-links a:last-child{
+        padding-right: 0;
+    }
+
+    .footer-links a:first-child{
+        padding-left: 0;
+    }
+    
+  }
+
+  /* Media Query for Small Screens */
+
+  
+  
+  
+  /* Media Query for Tablets  */
+  @media only screen and (max-width: 48rem) {
+
+    .menu, .icons {
+        display: none;
+    }
+
+
+    .navigation {
+        display: none;
+        margin-bottom: 3.125rem;
+    }
+
+    .mobile-navigation {
+        background: rgb(7, 7, 7);
+        color: #fff;
+        display: block;
+        overflow: hidden;
+    }
+
+    .mobile-navigation nav {
+        margin: 0.625rem auto 0 auto;
+        width: 80%;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .hamburger {
+        float: right;
+        font-size: 1.375rem;
+        
+    }
+
+    .hamburger a{
+        color: #fff;
+    }
+
+    .mobile-menu {
+        background-color: rgba(0,0,0, 0.9);
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        right: 0;
+        transition: 0.6s;
+        top: 0;
+        width: 0;
+        z-index: 1;
+    }
+
+    .close {
+        color: rgb(203, 201, 201);
+        font-size: 3.75rem;
+        position: absolute;
+        top: 1.25rem;
+        right: 2.813rem;
+    }
+
+    .menu-list {
+        margin-top: 1.875rem;
+        position: relative;
+        text-align: center;
+        top: 7.5rem;
+        width: 100%;
+    }
+
+    .menu-list a{
+        color: rgb(203, 201, 201);
+        display: block;
+        font-size: 2.25rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s; 
+    }
+
+    .search-title {
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .search-form {
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+    }
+    
+    .search-form input[type="text"] {
+        border: none;
+        border-radius: 0.188rem;
+        color: rgb(7, 7, 7);
+        font-size: 1.3em;
+        height: 4.063rem;
+        outline: none;
+        margin-bottom: 0.625rem;
+        padding: 1.25rem 0 1.25rem 2.5rem;
+    }
+
+
+
+    input.location {
+        width: 60%;
+    }
+    
+    input.miles {
+        width: 38%;
+    }
+    
+    input.favourite, input.cuisine {
+        width: 100%;
+        
+    }
+
+
+    input[type="submit"].submit {
+        color: rgb(50, 49, 49);
+        font-size: 1.5em;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+
+    .advance-title p span {
+        position: absolute;
+        padding-left: 0.313rem;
+        top: 0.688rem;
+    }
+
+    .advanced-button {
+        margin-top: 2.8rem;
+    }
+
+    .map {
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .result-title {
+        font-size: 1.50rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        word-spacing: 0.125rem;
+    }
+
+    .user-card {
+        margin-bottom: 1.25rem;
+        margin-right: 0.313rem;
+        padding: 1.25rem 0.625rem 0.938rem 0.625rem;
+        text-align: center;
+        width: 32%;
+    }
+
+    .user-card:hover {
+        border: 0.125rem solid rgb(29, 198, 139);
+    }
+
+    .card-image span {
+        height: 0.75rem;
+        position: absolute;
+        margin-left: 1rem;
+        margin-top: -1.125rem;
+        width: 0.75rem;
+    }
+
+
+    .description p {
+        display: block;
+        font-size: 0.875rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .description p .dot{
+        right: 5rem;
+        display: none;
+    }
+
+    .card-btn {
+        margin-bottom: 0.313rem;
+        margin-right: 0;
+    }
+
+    .pagination {
+        float: none;
+        margin: 3.75rem 0;
+        text-align: right;
+    }
+    
+    
+    .pagination a{
+        font-size: 1.8rem;
+        text-decoration: none;
+        padding: 0 0.938rem;
+    }
+
+    section.footer {
+        padding: 0 5.625rem 2.25rem 5.625rem;
+    }
+
+    p.copyright {
+        float: none;
+        font-size: 1.2rem;
+        margin-bottom: 0.625rem;
+        text-align: center;
+    }
+
+    div.footer-links {
+        float: none;
+        margin-top: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    div.footer-links a{
+        font-size: 1.2rem;
+    }
+  
+  }
+  
+  
+ 
+  
+  

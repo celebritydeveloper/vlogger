@@ -2,184 +2,384 @@
 <html>
     <head>
         <title>Vloggers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <div class="navigation">
-            <img src="images/jumpcut.svg" class="logo" alt="">
-            <ul class="menu">
-                <li><a href="#">My courses</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Video review</a></li>
-                <li><a href="#" class="active">Collaborate</a></li>
-            </ul>
-            <div class="icons">
-                <div class="notification">
-                    <i class="fa fa-bell"></i>
+    <header>
+        <div class="navigation">
+            <nav class="container">
+                <div class="logo">
+                    <img src="images/jumpcut.svg" alt="">
                 </div>
-                <div class="message">
-                    <i class="fas fa-comment"></i>
+                <div class="menu">
+                    <a href="#">my courses</a>
+                    <a href="#">community</a>
+                    <a href="#">video review</a>
+                    <a href="#">bootcamp</a>
+                    <a href="#" class="active">collaborate</a>
                 </div>
 
-                <div class="user">
-                    <i class="fa fa-user"></i>
-                    <span>SJ</span>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-bell"></i></a>
+                    <a href="#"><i class="fa fa-comment"></i></a>
+                    <a href="#" class="user"><i class="fa fa-user"></i></a>
                 </div>
+                <div class="clear"></div>
+            </nav>
+        </div>
+
+        <div class="mobile-navigation">
+            <nav>
+                <div class="logo">
+                    <img src="images/jumpcut.svg" alt="">
+                </div>
+
+                <div class="hamburger right">
+                    <a href="javascript:void(0)" id="hamburger" onclick="openmobileMenu()"><i class="fas fa-bars"></i></a>
+                </div>
+                    <div class="mobile-menu" id="mobileMenu">
+                        <span class="fa fa-times close" onclick="closeMobileMenu()"></span>
+                        <div class="menu-list">
+                            <a href="#">my courses</a>
+                            <a href="#">community</a>
+                            <a href="#">video review</a>
+                            <a href="#">bootcamp</a>
+                            <a href="#" class="active">collaborate</a>
+                        </div>
+                        
+                    </div>
+                
+
+                
+            </nav>
+        </div>
+
+        
+            <div class="search-title">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            
-        </div>
-        <div class="clear"></div>
-        </nav>
-
-        <div class="search">
-            <div class="search-text">
-            <h1>Lorem ipsum dolor sit</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-        </div>
-
-            <form action="" class="search-form">
-                <input type="text" placeholder="San Francisco, USA">
-                <input type="text" class="miles" placeholder="10 Min">
-                <input type="text" placeholder="Cooking">
-                <input type="text" placeholder="Chinese Cuisine">
-                <button>Search</button>
+            <div class="search-form container">
+            <form action="">
+                <input type="text" class="location" placeholder="Palau Ujong, Singapore">
+                <input type="text" class="miles" placeholder="5 miles">
+                <input type="text" class="favourite" placeholder="Cooking">
+                <input type="text" class="cuisine" placeholder="Italian Cuisine">
+                <input type="submit" class="submit" value="Search">
             </form>
         </div>
     </header>
-    <div class="container">
-    <section id="mapper">
-        <div class="search-title left">
-            <h3>16 vloggers near San Francisco</h3>
-            <ul>
-                <li>San Francisco, USA</li>
-                <li>10 miles radius</li>
-                <li>Vlog</li>
-            </ul>
+
+
+    <section class="advanced-search container">
+        <div class="advance-title">
+            <h3>16 vlogger near Palau Ujong</h3>
+            <p>Palau Ujong, Singapore <span class="fa fa-circle small-icon dot"></span></p>
+            <p>10 miles radius <span class="fa fa-circle small-icon dot"></span></p>
+            <p>Vlog</p>
         </div>
-        <div>
-            <button class="right">Advanced Search</button>
+
+        <div class="advanced-button">
+            <button>advanced search</button>
         </div>
+
         <div class="clear"></div>
-        <div class="map"></div>
     </section>
 
-    <section id="search-results row">
+    <section class="map">
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.521444789319!2d7.923087514159071!3d5.018816196356923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d57d0ee9c3155%3A0xda042cdae41dc500!2sUyo+Township+Stadium!5e0!3m2!1sen!2sng!4v1546967648878" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </section>
+
+    
+    
+
+    <section class="search-result container container1">
+          
+        <p class="result-title">Viewing <span>16</span> of <span>40</span> results</p>
         <div class="user-card">
-            <div class="user-image">
-                <img src="images/card.jpg" class="profile-pic" alt="">
+            <div class="card-image">
+                <img src="images/card.jpg" alt="">
+                <span class="online"></span>
             </div>
-            <span class="status"></span>
-            <div class="user-desc">
-                <h3>Saviour Essien</h3>
-                <div>
-                    <p class="location"> <span class="fa fa-map-marker-alt"></span> Bishan Singapore</p>
-                    <p class="location"> <span class="fa fa-circle"></span> 5 mile away</p>
-                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
                 <ul class="niche">
                     <li>vlog</li>
-                    <li>Cooking</li>
-                    <li>Arts</li>
+                    <li>cooking</li>
+                    <li>arts</li>
                 </ul>
-
-                <button class="btn btn-small">View channel</button>
-                <button class="btn btn-small">Send message</button>
-            </div>            
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
         </div>
 
-        <div class="user-card">
-            <img src="" alt="">
-            <span class="status"></span>
-            <div class="user-desc">
-                <h3>Saviour Essien</h3>
-                <ul>
-                    <li><span></span> Bishan Singapore</li>
-                    <li><span></span> 5 mile away</li>
-                </ul>
-                <ul>
-                    <li>vlog</li>
-                    <li>Cooking</li>
-                    <li>Arts</li>
-                </ul>
 
-                <button>View channel</button>
-                <button>Send message</button>
+        <div class="user-card">
+            <div class="card-image">
+                <img src="images/card.jpg" alt="">
+                <span class="offline"></span>
+            </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="away"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
             </div>
         </div>
 
         <div class="user-card">
-            <img src="" alt="">
-            <span class="status"></span>
-            <div class="user-desc">
-                <h3>Saviour Essien</h3>
-                <ul>
-                    <li><span></span> Bishan Singapore</li>
-                    <li><span></span> 5 mile away</li>
-                </ul>
-                <ul>
-                    <li>vlog</li>
-                    <li>Cooking</li>
-                    <li>Arts</li>
-                </ul>
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="away"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
 
-                <button>View channel</button>
-                <button>Send message</button>
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
             </div>
         </div>
 
         <div class="user-card">
-            <img src="" alt="">
-            <span class="status"></span>
-            <div class="user-desc">
-                <h3>Saviour Essien</h3>
-                <ul>
-                    <li><span></span> Bishan Singapore</li>
-                    <li><span></span> 5 mile away</li>
-                </ul>
-                <ul>
-                    <li>vlog</li>
-                    <li>Cooking</li>
-                    <li>Arts</li>
-                </ul>
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="offline"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
 
-                <button>View channel</button>
-                <button>Send message</button>
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
             </div>
         </div>
 
-        <div class="page">
-            <ul class="pagnation">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="offline"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
         </div>
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="away"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="online"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="away"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="offline"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="online"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+
+
+        <div class="user-card">
+                <div class="card-image">
+                        <img src="images/card.jpg" alt="">
+                        <span class="offline"></span>
+                </div>
+            <div class="description">
+                <h2>Claus Asil</h2>
+                <p><span class="fa fa-map-marker-alt small-icon"></span> Bishan Singapore</span></p>
+                <p><span class="fa fa-circle small-icon dot"></span>5 mile away</p>
+
+                <ul class="niche">
+                    <li>vlog</li>
+                    <li>cooking</li>
+                    <li>arts</li>
+                </ul>
+                <button class="card-btn">view channel</button>
+                <button class="card-btn">send message</button>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">&lsaquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&rsaquo;</a>
+        </div>
+
         <div class="clear"></div>
     </section>
-</div>
 
     <footer>
-        <div class="container footer">
-            <div class="left">
-                <p class="">&copy; 2018 Jumpcut</p>
+        <div class="footer container">
+            <p class="copyright">&copy; 2018 Jumpcut</p>
+            <div class="footer-links">
+                <a href="#">Refund Policy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Earning Disclaimer</a>
+                <a href="#">Testimonial Disclosure</a>
+                <a href="#">Affiliate Disclosure</a>
             </div>
-
-            <div class="right">
-            <ul class="footer-links">
-                <li><a href="#">Refund Policy</a> </li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Earnings Disclaimer</a></li>
-                <li><a href="#">Testimonial Disclosure</a></li>
-                <li><a href="#">Affiliate Disclosure</a></li>
-            </ul>
-        </div>
         </div>
     </footer>
  
+<script src="js/app.js"></script>
 </body> 
 </html>
