@@ -10,7 +10,7 @@ Web application for vlogger.
 
 
 ### Demo
-https://iamessien.github.io/vlogger/
+https://theboringdude.github.io/vlogger/
 
 
 ### Tools
@@ -19,7 +19,7 @@ https://toggl.com/app/projects/3140214/edit/148616772
 
 
 ### Installing
-Pull repository to your local machine using https://github.com/iamessien/vlogger.git or download zip using the clone or download above.
+Pull repository to your local machine using https://github.com/theboringdude/vlogger.git or download zip using the clone or download above.
 
 - Using command line `cd into the directory`
 - Depending on your editor add name with dot like this `code .`
